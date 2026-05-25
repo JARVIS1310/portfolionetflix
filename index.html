@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kr. Choudhary | Netflix Portfolio</title>
+    <meta name="description" content="Cinematic portfolio of Harsh Kr. Choudhary — Full Stack Developer specializing in React, Node.js, and immersive high-performance web experiences.">
+    
+    <!-- Google Fonts: Bebas Neue for titles, Montserrat for high contrast text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Devicon for tech skill badges -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+        <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home" class="netflix-body">
+    <!-- 🎥 NETFLIX OPENING IDENT ANIMATION -->
+    <div id="netflix-intro" aria-hidden="true">
+        <div class="intro-wrapper">
+            <span class="intro-letter">H</span>
+            <div class="intro-glow"></div>
+        </div>
+    </div>
+
+    <!-- Background overlays -->
+    <canvas id="particle-canvas"></canvas>
+    <div id="scroll-progress"></div>
+    <div id="cursor-glow"></div>
+    <div class="noise"></div>
+
+    <!-- 🍿 NETFLIX HEADER -->
+    <header class="site-header site-header-netflix">
+        <nav class="navbar">
+            <a href="index.html" class="brand brand-netflix" data-page="home">H<span>ARSH</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+            <ul class="menu menu-netflix">
+                <li><a href="index.html" class="nav-item" data-page="home">Home</a></li>
+                <li><a href="about.html" class="nav-item" data-page="about">About</a></li>
+                <li><a href="skillset.html" class="nav-item" data-page="skills">Skills</a></li>
+                <li><a href="project.html" class="nav-item" data-page="projects">Projects</a></li>
+                <li><a href="certifications.html" class="nav-item" data-page="certifications">Credentials</a></li>
+                <li><a href="contact.html" class="nav-item" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🎬 IMMERSIVE MAIN LAYOUT -->
+    <main class="page page-netflix">
+        
+        <!-- 🍿 HERO SECTION ("Featured Title") -->
+        <section id="hero" class="hero hero-netflix">
+            <div class="hero-bg-glow"></div>
+            
+            <div class="reveal hero-copy hero-copy-netflix">
+                <p class="eyebrow eyebrow-netflix">Featured Original Series</p>
+                
+                <!-- Typewriter greeting element, clamping for responsive single-line fit -->
+                <div class="hero-title-container">
+                    <h1 class="hero-title-typewriter" id="typewriter-text" aria-label="Hi, I am Harsh Kumar Choudhary"></h1>
+                </div>
+                
+                <p class="hero-meta-tags">
+                    <span class="meta-tag rating">LPU CSE</span>
+                    <span class="meta-tag year">2026</span>
+                    <span class="meta-tag hd">Full Stack</span>
+                    <span class="meta-tag subtitle-badge">Interactive</span>
+                </p>
+                
+                <p class="lead lead-netflix">
+                    An immersive engineering showcase by a developer focused on designing premium interfaces, smooth interactions, and robust performance-first web experiences from frontend to backend.
+                </p>
+                
+                <div class="hero-actions hero-actions-netflix">
+                    <a href="project.html" class="btn btn-primary btn-play magnetic">
+                        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <span>Watch Projects</span>
+                    </a>
+                    <a href="about.html" class="btn btn-secondary btn-info magnetic">
+                        <svg class="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        <span>More Info</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual: Upgraded Digital Terminal with subtle red/neon glow -->
+            <div class="hero-visual reveal hero-visual-netflix">
+                <div class="terminal-card tilt terminal-netflix terminal-animated">
+                    <div class="terminal-bar">
+                        <span class="t-dot t-red"></span>
+                        <span class="t-dot t-yellow"></span>
+                        <span class="t-dot t-green"></span>
+                        <span class="t-title">harsh_developer_profile.js</span>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="t-line"><span class="t-comment">// Original Netflix Cast Member</span></div>
+                        <div class="t-line"><span class="t-kw">const</span> <span class="t-var">developer</span> <span class="t-op">=</span> {</div>
+                        <div class="t-line t-ind"><span class="t-key">name</span><span class="t-op">:</span> <span class="t-str">"Harsh Kr. Choudhary"</span><span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">role</span><span class="t-op">:</span> <span class="t-str">"Full Stack Dev"</span><span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">location</span><span class="t-op">:</span> <span class="t-str">"India"</span><span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">frontend</span><span class="t-op">:</span> [<span class="t-str">"React"</span><span class="t-op">,</span> <span class="t-str">"HTML/CSS"</span><span class="t-op">,</span> <span class="t-str">"Motion UI"</span>]<span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">backend</span><span class="t-op">:</span> [<span class="t-str">"Node.js"</span><span class="t-op">,</span> <span class="t-str">"Express"</span><span class="t-op">,</span> <span class="t-str">"REST APIs"</span>]<span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">database</span><span class="t-op">:</span> [<span class="t-str">"MongoDB"</span><span class="t-op">,</span> <span class="t-str">"SQL"</span>]<span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">versionControl</span><span class="t-op">:</span> [<span class="t-str">"Git"</span><span class="t-op">,</span> <span class="t-str">"GitHub"</span>]<span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">deployment</span><span class="t-op">:</span> [<span class="t-str">"Vercel"</span><span class="t-op">,</span> <span class="t-str">"Render"</span>]<span class="t-op">,</span></div>
+                        <div class="t-line t-ind"><span class="t-key">available</span><span class="t-op">:</span> <span class="t-bool">true</span></div>
+                        <div class="t-line">};</div>
+                        <div class="t-line t-empty">&nbsp;</div>
+                        <div class="t-line"><span class="t-fn">console</span><span class="t-op">.</span><span class="t-fn">log</span>(<span class="t-str">"Ready to create."</span>)<span class="t-op">;</span> <span class="t-cursor-blink">▌</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section reveal home-summary-intro">
+            <div class="section-heading">
+                <p class="page-kicker">Choose a title</p>
+                <h2 class="row-title">Stream the full story on dedicated pages</h2>
+                <p class="section-subtitle">This homepage now works like a trailer: short previews with direct links to the full About, Skills, Projects, Credentials, and Contact pages.</p>
+            </div>
+
+            <div class="summary-grid">
+                <article class="card summary-card reveal tilt">
+                    <div>
+                        <span class="summary-meta">About</span>
+                        <h3>Why I build</h3>
+                        <p class="summary-copy">A focused look at my background, education, and the product mindset behind the work.</p>
+                    </div>
+                    <a class="summary-link" href="about.html">View more</a>
+                </article>
+
+                <article class="card summary-card reveal tilt">
+                    <div>
+                        <span class="summary-meta">Skills</span>
+                        <h3>Stack and tooling</h3>
+                        <p class="summary-copy">A detailed breakdown of frontend, backend, database, and delivery tools I use regularly.</p>
+                    </div>
+                    <a class="summary-link" href="skillset.html">View more</a>
+                </article>
+
+                <article class="card summary-card reveal tilt">
+                    <div>
+                        <span class="summary-meta">Projects</span>
+                        <h3>Featured builds</h3>
+                        <p class="summary-copy">Explore selected applications with deeper context, live links, and the stack behind each one.</p>
+                    </div>
+                    <a class="summary-link" href="project.html">View more</a>
+                </article>
+
+                <article class="card summary-card reveal tilt">
+                    <div>
+                        <span class="summary-meta">Credentials</span>
+                        <h3>Learning track</h3>
+                        <p class="summary-copy">A detailed look at certifications, workshops, and virtual internships in one place.</p>
+                    </div>
+                    <a class="summary-link" href="certifications.html">View more</a>
+                </article>
+
+                <article class="card summary-card reveal tilt">
+                    <div>
+                        <span class="summary-meta">Contact</span>
+                        <h3>Start a collaboration</h3>
+                        <p class="summary-copy">Open a direct channel for projects, freelance work, or team opportunities.</p>
+                    </div>
+                    <a class="summary-link" href="contact.html">View more</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 🍿 FOOTER ("Netflix branding footer") -->
+    <footer class="site-footer site-footer-netflix">
+        <div class="footer-content">
+            <div class="footer-links-netflix">
+                <p>Questions? Contact Harsh Kr. Choudhary</p>
+                <div class="footer-grid-netflix">
+                    <a href="about.html">About Cast</a>
+                    <a href="skillset.html">Trending Skills</a>
+                    <a href="project.html">Popular Projects</a>
+                    <a href="certifications.html">Credentials Index</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-branding-netflix">
+                <p>© 2026 Harsh Kr. Choudhary. Designed in standard high-contrast cinematic theme.</p>
+                <p class="branding-logo-mini">HARSH ORIGINAL</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Interactive JS scripts -->
+        <script src="script.js"></script>
+</body>
+</html>

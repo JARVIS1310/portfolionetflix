@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Harsh Kr. Choudhary</title>
+    <meta name="description" content="Contact page with direct form submission, availability note, and social links for Harsh Kr. Choudhary.">
+    <meta name="emailjs-service-id" content="service_9atzjzv">
+    <meta name="emailjs-template-id" content="template_vwxv01s">
+    <meta name="emailjs-public-key" content="QXp38yJCyksZg-Fzn">
+    <meta name="emailjs-recipient-email" content="kumarchoudharyharsh824@gmail.com">
+    <meta name="emailjs-recipient-name" content="Harsh Kr. Choudhary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body data-page="contact" class="netflix-body page-shell detail-page">
+    <div id="netflix-intro" aria-hidden="true"><div class="intro-wrapper"><span class="intro-letter">H</span><div class="intro-glow"></div></div></div>
+    <canvas id="particle-canvas"></canvas>
+    <div id="scroll-progress"></div>
+    <div id="cursor-glow"></div>
+    <div class="noise"></div>
+
+    <header class="site-header site-header-netflix">
+        <nav class="navbar">
+            <a href="index.html" class="brand brand-netflix" data-page="home">H<span>ARSH</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+            <ul class="menu menu-netflix">
+                <li><a href="index.html" class="nav-item" data-page="home">Home</a></li>
+                <li><a href="about.html" class="nav-item" data-page="about">About</a></li>
+                <li><a href="skillset.html" class="nav-item" data-page="skills">Skills</a></li>
+                <li><a href="project.html" class="nav-item" data-page="projects">Projects</a></li>
+                <li><a href="certifications.html" class="nav-item" data-page="certifications">Credentials</a></li>
+                <li><a href="contact.html" class="nav-item" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-netflix">
+        <section class="page-hero detail-hero reveal">
+            <div class="detail-hero-copy">
+                <p class="page-kicker">Contact</p>
+                <h1 class="page-title">Ready to start the next collaboration?</h1>
+                <p class="page-lead">If you have a product idea, a freelance task, or a team opportunity, share the details here. Messages are sent directly via EmailJS — you should receive a reply within 24 hours.</p>
+                <div class="page-actions">
+                    <a class="btn btn-primary btn-play magnetic" href="#contactForm">Open the form</a>
+                    <a class="btn btn-secondary btn-info magnetic" href="project.html">See recent work</a>
+                    <!-- inbox removed: messages are delivered via EmailJS -->
+                </div>
+            </div>
+
+            <aside class="page-panel tilt">
+                <h3>Availability</h3>
+                <div class="panel-list">
+                    <div class="panel-line"><strong>Status</strong><span>Available for freelance and roles</span></div>
+                    <div class="panel-line"><strong>Reply time</strong><span>Usually within 24 hours</span></div>
+                    <div class="panel-line"><strong>Focus</strong><span>Product builds and UI work</span></div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="contact-section-netflix reveal">
+            <div id="form-toast" class="form-toast" role="alert" aria-live="polite"></div>
+            <div class="contact-layout-netflix">
+                <article class="card contact-form-card-netflix tilt">
+                    <form id="contactForm" novalidate>
+                        <div class="field-netflix">
+                            <input id="name" type="text" name="name" placeholder=" " required autocomplete="name">
+                            <label for="name">Your Name</label>
+                            <span class="field-error" id="name-error"></span>
+                        </div>
+                        <div class="field-netflix">
+                            <input id="email" type="email" name="email" placeholder=" " required autocomplete="email">
+                            <label for="email">Email Address</label>
+                            <span class="field-error" id="email-error"></span>
+                        </div>
+                        <div class="field-netflix">
+                            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Describe your challenge / project details...</label>
+                            <span class="field-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit-netflix magnetic" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-spinner" hidden>⟳</span>
+                        </button>
+                    </form>
+                </article>
+
+                <div class="contact-status-column">
+                    <article class="card avail-card-netflix tilt">
+                        <div class="avail-badge-netflix">
+                            <span class="green-glow-dot"></span>
+                            <span>Available For Hire</span>
+                        </div>
+                        <h3>Premium collaborative cast</h3>
+                        <p>Open to remote roles, full-time contracts, and freelance projects. Let's write the next successful episode together.</p>
+                        <p class="response-note">Fast response rate: typically under 24 hours.</p>
+                    </article>
+
+                    <article class="card social-badge-card-netflix tilt">
+                        <h3>Cast Profiles</h3>
+                        <div class="netflix-social-buttons">
+                            <a href="https://www.linkedin.com/in/harsh-kumar-choudhary-38a463298/" target="_blank" rel="noopener noreferrer" class="social-btn-netflix">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/JARVIS1310" target="_blank" rel="noopener noreferrer" class="social-btn-netflix">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                <span>GitHub Repository</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer site-footer-netflix">
+        <div class="footer-content">
+            <div class="footer-links-netflix">
+                <p>Questions? Contact Harsh Kr. Choudhary</p>
+                <div class="footer-grid-netflix">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skillset.html">Skills</a>
+                    <a href="project.html">Projects</a>
+                    <a href="certifications.html">Credentials</a>
+                    <!-- inbox removed -->
+                </div>
+            </div>
+            <div class="footer-branding-netflix">
+                <p>© 2026 Harsh Kr. Choudhary. Designed in standard high-contrast cinematic theme.</p>
+                <p class="branding-logo-mini">HARSH ORIGINAL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

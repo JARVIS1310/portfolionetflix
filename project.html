@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Harsh Kr. Choudhary</title>
+    <meta name="description"
+        content="Detailed project showcase with live links, stack details, and product context for each featured build.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="projects" class="netflix-body page-shell detail-page">
+    <div id="netflix-intro" aria-hidden="true">
+        <div class="intro-wrapper"><span class="intro-letter">H</span>
+            <div class="intro-glow"></div>
+        </div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+    <div id="scroll-progress"></div>
+    <div id="cursor-glow"></div>
+    <div class="noise"></div>
+
+    <header class="site-header site-header-netflix">
+        <nav class="navbar">
+            <a href="index.html" class="brand brand-netflix" data-page="home">H<span>ARSH</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+            <ul class="menu menu-netflix">
+                <li><a href="index.html" class="nav-item" data-page="home">Home</a></li>
+                <li><a href="about.html" class="nav-item" data-page="about">About</a></li>
+                <li><a href="skillset.html" class="nav-item" data-page="skills">Skills</a></li>
+                <li><a href="project.html" class="nav-item" data-page="projects">Projects</a></li>
+                <li><a href="certifications.html" class="nav-item" data-page="certifications">Credentials</a></li>
+                <li><a href="contact.html" class="nav-item" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-netflix">
+        <section class="page-hero detail-hero reveal">
+            <div class="detail-hero-copy">
+                <p class="page-kicker">Projects</p>
+                <h1 class="page-title">Selected builds with deeper context, not just screenshots.</h1>
+                <p class="page-lead">The homepage only previews these releases. This page gives you the stack, the
+                    purpose, and the live link for each project so the work is easy to understand at a glance.</p>
+                <div class="page-actions">
+                    <a class="btn btn-primary btn-play magnetic" href="contact.html">Discuss a build</a>
+                    <a class="btn btn-secondary btn-info magnetic" href="skillset.html">Review the stack</a>
+                </div>
+            </div>
+
+            <aside class="page-panel tilt">
+                <h3>Featured release types</h3>
+                <div class="panel-list">
+                    <div class="panel-line"><strong>Commerce</strong><span>Orders, cart, payments</span></div>
+                    <div class="panel-line"><strong>AI</strong><span>Assistive chatbot experiences</span></div>
+                    <div class="panel-line"><strong>Community</strong><span>Gaming and fan platforms</span></div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="detail-section reveal project-detail-list">
+            <article class="card page-card project-detail-card tilt">
+                <div class="project-detail-media">
+                    <img src="newproject1.png" alt="ShopSphere eCommerce Platform" onerror="this.src='project1.png'">
+                </div>
+                <div class="project-detail-body">
+                    <span class="summary-meta">ShopSphere</span>
+                    <h3>Full-stack eCommerce platform</h3>
+                    <p>Built to handle a polished shopping flow with cart management, order tracking, and a clean
+                        dashboard experience. The emphasis is on clarity, trust, and conversion-friendly interaction.
+                    </p>
+                    <p class="page-note">Stack: React, Node.js, product-focused UI, and backend-ready structure.</p>
+                    <p class="movie-tags"><span>eCommerce</span><span>React</span><span>Node.js</span></p>
+                    <div class="page-actions">
+                        <a class="btn btn-primary btn-mini-play" href="https://ecommerceintern-rho.vercel.app"
+                            target="_blank" rel="noopener noreferrer">View live</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card page-card project-detail-card tilt">
+                <div class="project-detail-media">
+                    <img src="newproject2.png" alt="EcoAssist Chatbot" onerror="this.src='project2.png'">
+                </div>
+                <div class="project-detail-body">
+                    <span class="summary-meta">EcoAssist</span>
+                    <h3>AI chatbot for sustainability guidance</h3>
+                    <p>This build turns sustainability advice into an interactive, easy-to-use experience. It is
+                        designed to help users make practical energy and carbon reduction decisions in real time.</p>
+                    <p class="page-note">Stack: Chat-first interaction model, clean UI patterns, and assistive content
+                        delivery.</p>
+                    <p class="movie-tags"><span>AI Chatbot</span><span>Sustainability</span><span>Clean UI</span></p>
+                    <div class="page-actions">
+                        <a class="btn btn-primary btn-mini-play" href="https://chatbot-io-teal.vercel.app"
+                            target="_blank" rel="noopener noreferrer">View live</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card page-card project-detail-card tilt">
+                <div class="project-detail-media">
+                    <img src="project3.png" alt="GameVault Platform">
+                </div>
+                <div class="project-detail-body">
+                    <span class="summary-meta">GameVault</span>
+                    <h3>Gaming discovery and catalog experience</h3>
+                    <p>Built for users who want to track games, organize bookmarks, and surface personalized
+                        recommendations. The interface keeps browsing simple while still feeling like a proper product.
+                    </p>
+                    <p class="page-note">Stack: SQL-backed data handling, recommendations, and catalog organization.</p>
+                    <p class="movie-tags"><span>Gaming</span><span>SQL Database</span><span>Recommendations</span></p>
+                    <div class="page-actions">
+                        <a class="btn btn-primary btn-mini-play" href="https://jarvis1310.github.io/GAME.IO/"
+                            target="_blank" rel="noopener noreferrer">View live</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card page-card project-detail-card tilt">
+                <div class="project-detail-media">
+                    <img src="project4.png" alt="DemonVerse Slayer Fan Page">
+                </div>
+                <div class="project-detail-body">
+                    <span class="summary-meta">DemonVerse</span>
+                    <h3>Interactive fan experience</h3>
+                    <p>An anime-inspired fan application with a cinematic backdrop, character exploration, and
+                        trivia-driven engagement. This one leans heavily into motion, atmosphere, and content flow.</p>
+                    <p class="page-note">Stack: visual storytelling, lightweight interaction design, and a content-rich
+                        fan experience.</p>
+                    <p class="movie-tags"><span>Fan Page</span><span>Cinematic</span><span>Quizzes</span></p>
+                    <div class="page-actions">
+                        <a class="btn btn-primary btn-mini-play" href="https://jarvis1310.github.io/ds-fan-page/"
+                            target="_blank" rel="noopener noreferrer">View live</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card page-card project-detail-card tilt">
+                <div class="project-detail-media">
+                    <img src="project5.png" alt="Velocity Vault car showcase" onerror="this.onerror=null;this.src='project 5.png'">
+                </div>
+                <div class="project-detail-body">
+                    <span class="summary-meta">Velocity Vault</span>
+                    <h3>Interactive car model showcase</h3>
+                    <p>A high-impact automotive showcase that presents different car models with a clean browsing flow
+                        and focused visual hierarchy. The experience is built to make exploring model options fast,
+                        informative, and visually engaging for enthusiasts and buyers.</p>
+                    <p class="page-note">Stack: Frontend - HTML5, CSS3, JavaScript. Backend - Node.js, Express.js, JSON-based data handling.</p>
+                    <p class="movie-tags"><span>Cars</span><span>Frontend UI</span><span>Node.js Backend</span></p>
+                    <div class="page-actions">
+                        <a class="btn btn-primary btn-mini-play" href="https://jarvis1310.github.io/updtcar/"
+                            target="_blank" rel="noopener noreferrer">View live</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer site-footer-netflix">
+        <div class="footer-content">
+            <div class="footer-links-netflix">
+                <p>Questions? Contact Harsh Kr. Choudhary</p>
+                <div class="footer-grid-netflix">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skillset.html">Skills</a>
+                    <a href="certifications.html">Credentials</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-branding-netflix">
+                <p>© 2026 Harsh Kr. Choudhary. Designed in standard high-contrast cinematic theme.</p>
+                <p class="branding-logo-mini">HARSH ORIGINAL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
